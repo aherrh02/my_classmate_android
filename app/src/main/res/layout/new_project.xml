@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo"
+        android:orientation="vertical"
+        tools:context=".Segunda_Activity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.7"
+                android:background="@color/fondo"
+                app:icon="@drawable/ic_back"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="30dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Project - Cake"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.like.LikeButton
+                    android:id="@+id/star_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon_size="10dp"
+                    app:icon_type="heart" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step 1"
+                    android:textColor="@color/white"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step 2"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step 3"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="step 4"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:background="@drawable/custom_borders"
+            android:fadeScrollbars="true"
+            android:gravity="center_horizontal"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:overScrollMode="always"
+            android:paddingTop="5dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_secundario_rounded"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="49dp"
+                    android:layout_height="45dp"
+                    android:alpha="0.7"
+                    android:letterSpacing="0"
+                    app:icon="@drawable/ic_text"
+                    app:iconPadding="0dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

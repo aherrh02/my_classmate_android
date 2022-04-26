@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:layout_width="370dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_secundario_rounded"
+                android:closeIcon="@drawable/ic_search_black_24dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+            </SearchView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="true"
+                android:gravity="center_horizontal"
+                android:isScrollContainer="false"
+                android:orientation="vertical"
+                android:overScrollMode="always">
+
+                <LinearLayout
+                    android:id="@+id/inbox_click"
+                    android:layout_width="380dp"
+                    android:layout_height="45dp"
+                    android:clickable="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@android:string/unknownName"
+                        android:src="@drawable/inbox"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:clickable="false"
+                        android:text="@string/inbox"
+                        android:textColor="@color/white"
+                        android:textStyle="normal|bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:clickable="false"
+                        android:text="@string/_5"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/today_click"
+                    android:layout_width="380dp"
+                    android:layout_height="45dp"
+                    android:clickable="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@android:string/unknownName"
+                        android:src="@drawable/today" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:clickable="false"
+                        android:text="@string/today"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:clickable="false"
+                        android:text="@string/_2"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/upcoming_click"
+                    android:layout_width="380dp"
+                    android:layout_height="45dp"
+                    android:clickable="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@android:string/unknownName"
+                        android:src="@drawable/upcoming" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:clickable="false"
+                        android:text="@string/upcoming"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:clickable="false"
+                        android:text="@string/_4"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/anytime_click"
+                    android:layout_width="380dp"
+                    android:layout_height="45dp"
+                    android:clickable="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@android:string/unknownName"
+                        android:src="@drawable/anytime" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:clickable="false"
+                        android:text="@string/anytime"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:clickable="false"
+                        android:text="@string/_20"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.164"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_borders"
+            android:fadeScrollbars="true"
+            android:gravity="center_horizontal"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:overScrollMode="always"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/new_category"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:clickable="false"
+                android:focusable="auto"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:contentDescription="@android:string/unknownName"
+                    android:src="@drawable/new_category" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="5dp"
+                    android:clickable="false"
+                    android:text="@string/newCategory"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.164"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.091"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:clickable="false"
+                    android:text="@string/_20"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.164"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.091"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end|right"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabNewTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/new_task"
+                    android:tint="@color/grey_80"
+                    app:backgroundTint="@color/grey_20"
+                    app:fabSize="mini"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabNewProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/new_project"
+                    android:tint="@color/grey_80"
+                    app:backgroundTint="@color/grey_20"
+                    app:fabSize="mini"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="18dp"
+                    app:fabSize="normal"
+                    app:rippleColor="@color/white"
+                    app:srcCompat="@drawable/new_category"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+    </LinearLayout>
+
+</layout>

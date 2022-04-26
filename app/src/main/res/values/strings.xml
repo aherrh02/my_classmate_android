@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Classmate</string>
+    <string name="inbox">Inbox</string>
+    <string name="today">Today</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="anytime">Anytime</string>
+    <string name="_5">5</string>
+    <string name="_2">2</string>
+    <string name="_4">4</string>
+    <string name="_20">100</string>
+    <string name="newCategory">New Category</string>
+</resources>
